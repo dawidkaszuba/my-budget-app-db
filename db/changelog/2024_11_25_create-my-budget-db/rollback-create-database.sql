@@ -1,0 +1,7 @@
+REVOKE ALL PRIVILEGES ON SCHEMA public FROM my_budget_user;
+REVOKE ALL PRIVILEGES ON ALL TABLES IN SCHEMA public FROM my_budget_user;
+REVOKE ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public FROM my_budget_user;
+REVOKE ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public FROM my_budget_user;
+
+REVOKE ALL PRIVILEGES ON TABLE databasechangelog FROM my_budget_user;
+REVOKE ALL PRIVILEGES ON TABLE databasechangeloglock FROM my_budget_user;

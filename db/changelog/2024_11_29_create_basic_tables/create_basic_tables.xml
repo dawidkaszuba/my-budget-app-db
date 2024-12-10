@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="2024_11_29_create_basic_tables_tag" author="dawid.kaszuba">
+        <tagDatabase tag="2024_11_29_create_basic_tables"/>
+    </changeSet>
+
+    <changeSet id="2024_11_29_create_expense_table_1" author="dawid.kaszuba">
+        <sqlFile path="db/changelog/2024_11_29_create_basic_tables/create_basic_tables.sql"/>
+        <rollback>
+            <sqlFile path="db/changelog/2024_11_29_create_basic_tables/rollback_create_basic_tables.sql"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
